@@ -7,7 +7,11 @@ OptiCrop is a machine learning-based agricultural recommendation system that rec
 The project combines Machine Learning models with a Flask web application, allowing users to enter agricultural parameters through a simple interface and receive instant crop recommendations. The goal is to improve crop yield, optimize resource utilization, and support sustainable farming practices.
 
 ---
+## Live Demo Links:
 
+Frontend: https://frontendopticrop.vercel.app/
+
+---
 ## 🛠️ Technologies Used
 
 ### Programming Languages
