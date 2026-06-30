@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - OptiCrop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="OptiCrop logo" onerror="this.style.display='none'"/>
+    <span>
+      <span class="logo-text">Opti<span>Crop</span></span>
+      <span class="logo-tag">Smart Farming AI</span>
+    </span>
+  </a>
+  <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="prediction.html">Predict Crop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <div class="contact-hero">
+    <h2>Contact Us 📩</h2>
+    <p>Have any questions or suggestions? Feel free to reach out to us.</p>
+  </div>
+
+  <div class="contact-body">
+
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Have any questions or suggestions? Feel free to reach out to us.</p>
+
+      <div class="info-item">
+        <div class="info-icon"> 📧 <i class="fas fa-envelope"></i></div>
+        <div>
+          <strong>Email</strong>
+          <span>opticrop.smartbridge@gmail.com</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"> 📞 <i class="fas fa-phone"></i></div>
+        <div>
+          <strong>Phone</strong>
+          <span>+91 98765 43210</span>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"> 📍 <i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <strong>Location</strong>
+          <span>Andhra Pradesh, India 🇮🇳</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="c-name" placeholder="Enter your name"/>
+        <div class="form-error" id="c-name-error">Please enter your name</div>
+      </div>
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" id="c-email" placeholder="Enter your email"/>
+        <div class="form-error" id="c-email-error">Please enter a valid email</div>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="c-msg" placeholder="Write your message here..."></textarea>
+        <div class="form-error" id="c-msg-error">Please enter a message</div>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;" onclick="sendMessage()">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+    </div>
+
+  </div>
+
+  <footer>
+    <span class="brand">🌿 OptiCrop</span>
+    <span>© 2024 OptiCrop. All Rights Reserved. | Smart Farming for a Better Future</span>
+  </footer>
+</div>
+
+<div class="toast" id="toast"><i class="fas fa-info-circle"></i><span id="toast-msg"></span></div>
+
+<script src="script.js"></script>
+</body>
+</html>

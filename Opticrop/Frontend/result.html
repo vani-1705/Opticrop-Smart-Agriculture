@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prediction Result - OptiCrop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="loadResult()">
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="OptiCrop logo" onerror="this.style.display='none'"/>
+    <span>
+      <span class="logo-text">Opti<span>Crop</span></span>
+      <span class="logo-tag">Smart Farming AI</span>
+    </span>
+  </a>
+  <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="prediction.html">Predict Crop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page result-page">
+
+  <div class="result-hero">
+    <h2>🌱 Prediction Result</h2>
+    <p>Based on the given input parameters</p>
+  </div>
+
+  <div class="result-container">
+    <div class="result-top">
+      <div class="result-card crop-card">
+        <span class="crop-emoji" id="res-emoji">🌾</span>
+        <h3>Recommended Crop</h3>
+        <div class="crop-name" id="res-crop">—</div>
+      </div>
+      <div style="display:grid;gap:20px;">
+        <div class="result-card" style="text-align:center;">
+          <h3>Confidence Score</h3>
+          <div class="confidence-num" id="res-conf">—</div>
+        </div>
+        <div class="result-card" style="text-align:center;">
+          <h3>Suitable Season</h3>
+          <div class="season-val" id="res-season">—</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="params-table">
+      <h3>📋 Input Parameters</h3>
+      <div class="params-grid">
+        <div class="param-item"><span>Nitrogen (N)</span><span id="r-n">—</span></div>
+        <div class="param-item"><span>Humidity</span><span id="r-h">—</span></div>
+        <div class="param-item"><span>Phosphorous (P)</span><span id="r-p">—</span></div>
+        <div class="param-item"><span>pH Value</span><span id="r-ph">—</span></div>
+        <div class="param-item"><span>Potassium (K)</span><span id="r-k">—</span></div>
+        <div class="param-item"><span>Rainfall</span><span id="r-rf">—</span></div>
+        <div class="param-item"><span>Temperature</span><span id="r-t">—</span></div>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <a href="prediction.html" class="btn-outline"><i class="fas fa-redo"></i> Try Again</a>
+      <a href="index.html" class="btn-primary"><i class="fas fa-home"></i> Go to Home</a>
+    </div>
+  </div>
+
+  <footer>
+    <span class="brand">🌿 OptiCrop</span>
+    <span>© 2024 OptiCrop. All Rights Reserved. | Smart Farming for a Better Future</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

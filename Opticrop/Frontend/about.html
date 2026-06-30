@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - OptiCrop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="OptiCrop logo" onerror="this.style.display='none'"/>
+    <span>
+      <span class="logo-text">Opti<span>Crop</span></span>
+      <span class="logo-tag">Smart Farming AI</span>
+    </span>
+  </a>
+  <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="prediction.html">Predict Crop</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <div class="about-hero">
+    <h2>About OptiCrop 🌾</h2>
+    <p>The story, the mission, and the team behind the engine</p>
+  </div>
+
+  <div class="about-body">
+    <div class="about-3col">
+
+      <div class="about-box">
+        <h3>📖 Project Overview</h3>
+        <p>OptiCrop is a smart agricultural recommendation system that predicts the most suitable crop based on soil nutrients and environmental parameters. It uses machine learning techniques to help farmers improve productivity and make better farming decisions.</p>
+        <br>
+        <h3>🎯 Objectives</h3>
+        <ul>
+          <li>🌱 Provide accurate crop recommendations</li>
+          <li>💧 Optimize resource utilization</li>
+          <li>📈 Increase crop yield and reduce risks</li>
+          <li>🌍 Promote sustainable agriculture</li>
+        </ul>
+      </div>
+
+      <div class="about-box">
+        <h3>✨ Features</h3>
+        <ul>
+          <li>✅ Crop recommendation using ML models</li>
+          <li>✅ User-friendly and responsive interface</li>
+          <li>✅ Support for multiple soil and climate parameters</li>
+          <li>✅ Real-time prediction results</li>
+          <li>✅ Data-driven farming decisions</li>
+        </ul>
+      </div>
+
+      <div class="about-box">
+        <h3>🛠️ Technologies Used</h3>
+        <div class="tech-list">
+          <div class="tech-item"><div class="tech-icon">🌐</div>HTML5, CSS3, JavaScript</div>
+          <div class="tech-item"><div class="tech-icon">B</div>Bootstrap 5</div>
+          <div class="tech-item"><div class="tech-icon">🐍</div>Python, Flask</div>
+          <div class="tech-item"><div class="tech-icon">🤖</div>Scikit-learn</div>
+          <div class="tech-item"><div class="tech-icon">📊</div>Pandas, NumPy</div>
+          <div class="tech-item"><div class="tech-icon">📈</div>Matplotlib, Seaborn</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="team-section">
+    <h2 class="section-title">Team Members</h2>
+    <p class="section-sub" style="margin-bottom:40px;">The five hands that built OptiCrop 🤝</p>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img class="team-photo" src="images/Member1.png" alt="Vani Vasantha Laxmi Yepparika" onerror="this.style.display='none'"/>
+        <h4>Yepparika Vani<br>Vasantha Laxmi</h4>
+        <span class="team-role">Frontend & Data Preprocessing</span>
+        <p class="team-work">Built the HTML pages, read & cleaned the dataset, checked for null values, handled outliers, extracted seasonal crops, and wrote the project conclusion.</p>
+      </div>
+
+      <div class="team-card">
+        <img class="team-photo" src="images/Member2.png" alt="Jaddu Gowthami" onerror="this.style.display='none'"/>
+        <h4>Jaddu Gowthami</h4>
+        <span class="team-role">ML Model Development</span>
+        <p class="team-work">Defined the business problem, designed the project workflow, conducted the literature survey, and built the Logistic Regression crop prediction model.</p>
+      </div>
+
+      <div class="team-card">
+        <img class="team-photo" src="images/Member3.png" alt="Janaki Sravanthi Paluchuri" onerror="this.style.display='none'"/>
+        <h4>Janaki Sravanthi<br>Paluchuri</h4>
+        <span class="team-role">Model Evaluation & Business Analysis</span>
+        <p class="team-work">Analyzed business requirements, studied social & business impact, applied K-Means clustering, evaluated model performance, and saved the best model.</p>
+      </div>
+
+      <div class="team-card">
+        <img class="team-photo" src="images/Member4.png" alt="Shaik Sana Thabassum" onerror="this.style.display='none'"/>
+        <h4>Shaik Sana<br>Thabassum</h4>
+        <span class="team-role">Data Collection & EDA</span>
+        <p class="team-work">Downloaded the dataset, imported the core libraries, and performed univariate, bivariate, and multivariate exploratory data analysis.</p>
+      </div>
+
+      <div class="team-card">
+        <img class="team-photo" src="images/Member5.png" alt="Jeevan Srinivas" onerror="this.style.display='none'"/>
+        <h4>Jeevan Srinivas</h4>
+        <span class="team-role">Backend & System Integration</span>
+        <p class="team-work">Designed the Entity Relationship Diagram, documented prerequisites, built the Python backend, split the dataset for training/testing, and ran the full application.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class="brand">🌿 OptiCrop</span>
+    <span>© 2024 OptiCrop. All Rights Reserved. | Smart Farming for a Better Future</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

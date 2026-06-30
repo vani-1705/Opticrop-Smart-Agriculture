@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Predict Crop - OptiCrop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="OptiCrop logo" onerror="this.style.display='none'"/>
+    <span>
+      <span class="logo-text">Opti<span>Crop</span></span>
+      <span class="logo-tag">Smart Farming AI</span>
+    </span>
+  </a>
+  <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="prediction.html" class="active">Predict Crop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page predict-page">
+
+  <div class="predict-hero">
+    <h2>🌱 Crop Prediction</h2>
+    <p>Enter the soil and environmental parameters below</p>
+  </div>
+
+  <div class="form-container">
+
+    <div class="param-row">
+      <div class="param-icon">N</div>
+      <div class="param-label">
+        <strong>Nitrogen (N)</strong>
+        <span>Soil nitrogen content</span>
+        <div class="field-error" id="nitrogen-error">Enter a value between 0 and 140</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="nitrogen" placeholder="0-140" min="0" max="140"/>
+        <span class="unit">mg/kg</span>
+      </div>
+    </div>
+
+    <div class="param-row">
+      <div class="param-icon">P</div>
+      <div class="param-label">
+        <strong>Phosphorous (P)</strong>
+        <span>Soil phosphorous level</span>
+        <div class="field-error" id="phosphorous-error">Enter a value between 5 and 145</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="phosphorous" placeholder="5-145" min="5" max="145"/>
+        <span class="unit">mg/kg</span>
+      </div>
+    </div>
+
+    <div class="param-row">
+      <div class="param-icon">K</div>
+      <div class="param-label">
+        <strong>Potassium (K)</strong>
+        <span>Soil potassium level</span>
+        <div class="field-error" id="potassium-error">Enter a value between 5 and 205</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="potassium" placeholder="5-205" min="5" max="205"/>
+        <span class="unit">mg/kg</span>
+      </div>
+    </div>
+
+    <div class="param-row">
+      <div class="param-icon">🌡️ <i class="fas fa-thermometer-half"></i></div>
+      <div class="param-label">
+        <strong>Temperature</strong>
+        <span>Ambient temperature</span>
+        <div class="field-error" id="temperature-error">Enter a value between 8 and 45</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="temperature" placeholder="8-45" min="8" max="45" step="0.1"/>
+        <span class="unit">°C</span>
+      </div>
+    </div>
+
+    <div class="param-row">
+      <div class="param-icon"> 💧 <i class="fas fa-tint"></i></div>
+      <div class="param-label">
+        <strong>Humidity</strong>
+        <span>Relative humidity</span>
+        <div class="field-error" id="humidity-error">Enter a value between 14 and 100</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="humidity" placeholder="14-100" min="14" max="100" step="0.1"/>
+        <span class="unit">%</span>
+      </div>
+    </div>
+
+    <div class="param-row">
+      <div class="param-icon"> ⚗️  <i class="fas fa-flask"></i></div>
+      <div class="param-label">
+        <strong>pH Value</strong>
+        <span>Soil acidity/alkalinity</span>
+        <div class="field-error" id="ph-error">Enter a value between 3.5 and 10</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="ph" placeholder="3.5-10" min="3.5" max="10" step="0.01"/>
+        <span class="unit">pH</span>
+      </div>
+    </div>
+
+    <div class="param-row">
+      <div class="param-icon"> 🌧️ <i class="fas fa-cloud-rain"></i></div>
+      <div class="param-label">
+        <strong>Rainfall</strong>
+        <span>Annual rainfall</span>
+        <div class="field-error" id="rainfall-error">Enter a value between 20 and 300</div>
+      </div>
+      <div class="param-input">
+        <input type="number" id="rainfall" placeholder="20-300" min="20" max="300" step="0.1"/>
+        <span class="unit">mm</span>
+      </div>
+    </div>
+
+    <div class="predict-btn-wrap">
+      <button class="btn-primary" onclick="predictCrop()">
+        <i class="fas fa-seedling"></i> Predict Crop
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <span class="brand">🌿 OptiCrop</span>
+    <span>© 2024 OptiCrop. All Rights Reserved. | Smart Farming for a Better Future</span>
+  </footer>
+</div>
+
+<div class="toast" id="toast"><i class="fas fa-info-circle"></i><span id="toast-msg"></span></div>
+
+<script src="script.js"></script>
+</body>
+</html>

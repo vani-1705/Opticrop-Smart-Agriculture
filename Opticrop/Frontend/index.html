@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OptiCrop - Smart Agricultural Production Optimization Engine</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.png" alt="OptiCrop logo" onerror="this.style.display='none'"/>
+    <span>
+      <span class="logo-text">Opti<span>Crop</span></span>
+      <span class="logo-tag">Smart Farming AI</span>
+    </span>
+  </a>
+  <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="prediction.html">Predict Crop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page">
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">🌱 AI-Powered Crop Intelligence</span>
+      <h1>OptiCrop<br><span>Smart Agricultural</span><br>Production Engine</h1>
+      <p>OptiCrop helps farmers and agricultural stakeholders discover the most suitable crops based on soil nutrients and environmental conditions using advanced machine learning. Grow smarter, harvest better. 🌾</p>
+      <div class="hero-btns">
+        <a href="prediction.html" class="btn-primary"><i class="fas fa-seedling"></i> Predict Crop</a>
+        <a href="about.html" class="btn-secondary"><i class="fas fa-info-circle"></i> Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-section">
+    <h2 class="section-title">Why OptiCrop?</h2>
+    <p class="section-sub">Four reasons smart farmers trust data over guesswork</p>
+    <div class="cards-grid">
+
+      <div class="feature-card">
+        <img class="feature-img" src="images/Smart_prediction.png" alt="Smart Prediction" onerror="this.style.display='none'"/>
+        <div class="feature-body">
+          <h3>🧠 Smart Prediction</h3>
+          <p>Get accurate crop recommendations using advanced machine learning algorithms trained on real soil and climate data.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <img class="feature-img" src="images/Better_productivity.png" alt="Better Productivity" onerror="this.style.display='none'"/>
+        <div class="feature-body">
+          <h3>📈 Better Productivity</h3>
+          <p>Improve yield and reduce crop failure with data-driven insights tailored to your exact field conditions.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <img class="feature-img" src="images/Resource_optimization.png" alt="Resource Optimization" onerror="this.style.display='none'"/>
+        <div class="feature-body">
+          <h3>💧 Resource Optimization</h3>
+          <p>Optimize the use of water, fertilizers, and other resources so nothing goes to waste in your fields.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <img class="feature-img" src="images/Sustainable_farming.png" alt="Sustainable Farming" onerror="this.style.display='none'"/>
+        <div class="feature-body">
+          <h3>🌍 Sustainable Farming</h3>
+          <p>Promote sustainable agriculture practices and protect the environment for generations to come.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <span class="brand">🌿 OptiCrop</span>
+    <span>© 2024 OptiCrop. All Rights Reserved. | Smart Farming for a Better Future</span>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
