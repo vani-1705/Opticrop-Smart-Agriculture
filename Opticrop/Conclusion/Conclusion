@@ -1,13 +1,13 @@
-# 🌾 OptiCrop: Smart Agricultural Production Optimization Engine
+#🌾 OptiCrop: Smart Agricultural Production Optimization Engine
 
-## 📌 Project Description
+##📌 Project Description
 OptiCrop is a machine learning-based system that recommends the most suitable crop to grow based on soil and environmental conditions — Nitrogen (N), Phosphorous (P), Potassium (K), temperature, humidity, pH, and rainfall. It combines a trained ML model with a Flask web app, so a user enters these values and instantly gets the best crop recommendation, helping improve yield and resource use.
 
 ---
 
-## 👥 Team Members, Roles & Work Done
+##👥 Team Members, Roles & Work Done
 
-### 🧑‍💼 Yepparika Vani Vasantha Laxmi — Team Lead | Frontend & Data Preprocessing
+###🧑‍💼 Yepparika Vani Vasantha Laxmi — Team Lead | Frontend & Data Preprocessing
 **Work done & uploaded:**
 - Built the entire frontend (`index.html`, `predict.html`, `result.html`, `style.css`, `script.js`)
 - Read the dataset and checked for null values
@@ -19,7 +19,7 @@ OptiCrop is a machine learning-based system that recommends the most suitable cr
 
 ---
 
-### 👩 Jaddu Gowthami — ML Model Development
+###👩 Jaddu Gowthami — ML Model Development
 **Work done & uploaded:**
 - Defined the business problem and project workflow
 - Conducted the literature survey
@@ -30,7 +30,7 @@ OptiCrop is a machine learning-based system that recommends the most suitable cr
 
 ---
 
-### 👨 Jeevan Srinivas — Backend & System Integration
+###👨 Jeevan Srinivas — Backend & System Integration
 **Work done & uploaded:**
 - Designed the ER diagram
 - Documented project pre-requisites
@@ -42,7 +42,7 @@ OptiCrop is a machine learning-based system that recommends the most suitable cr
 
 ---
 
-### 👩 Janaki Sravanthi Paluchuri — Model Evaluation & Business Analysis
+###👩 Janaki Sravanthi Paluchuri — Model Evaluation & Business Analysis
 **Work done & uploaded:**
 - Gathered business requirements
 - Analyzed social & business impact
@@ -53,7 +53,7 @@ OptiCrop is a machine learning-based system that recommends the most suitable cr
 
 ---
 
-### 👩 Shaik Sana Thabassum — Data Collection & EDA
+###👩 Shaik Sana Thabassum — Data Collection & EDA
 **Work done & uploaded:**
 - Downloaded the dataset and imported libraries
 - Performed univariate, bivariate, and multivariate analysis
@@ -62,7 +62,7 @@ OptiCrop is a machine learning-based system that recommends the most suitable cr
 
 ---
 
-## 🛠️ Technologies Used & Their Purpose
+##🛠️ Technologies Used & Their Purpose
 
 | Technology | Used For |
 |---|---|
@@ -78,10 +78,10 @@ OptiCrop is a machine learning-based system that recommends the most suitable cr
 
 ---
 
-## 📈 Output
+##📈 Output
 The Flask web app takes user input (N, P, K, temperature, humidity, pH, rainfall) and instantly returns the recommended crop. Multiple models were trained and compared; the best-performing one was saved as `best_model.pkl` and deployed in the app, giving accurate, real-time predictions through a clean web interface.
 
 ---
 
-## ✅ Final Conclusion
+##✅ Final Conclusion
 OptiCrop successfully shows how machine learning can support smarter farming by turning soil and environmental data into a clear, actionable crop recommendation. Through combined teamwork across data analysis, model building, backend, and frontend, the project delivers a complete working system that helps farmers pick the right crop, use resources more efficiently, and reduce the risk of crop failure — a practical step toward sustainable, data-driven agriculture.
