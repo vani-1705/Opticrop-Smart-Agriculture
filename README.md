@@ -111,7 +111,7 @@ OptiCrop/
 │   ├── scatterplot.png
 │   └── heatmap.png
 │
-├── README.md
+├── Conclusion
 └── requirements.txt
 ```
 
