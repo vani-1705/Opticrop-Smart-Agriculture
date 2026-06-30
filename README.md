@@ -9,7 +9,7 @@ The project combines Machine Learning models with a Flask web application, allow
 ---
 ## Live Demo Links:
 
-Frontend: https://frontendopticrop.vercel.app/
+Frontend: https://opticrop-smart-agriculture.vercel.app/
 
 ---
 ## 🛠️ Technologies Used
